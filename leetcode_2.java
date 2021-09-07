@@ -18,6 +18,7 @@ public class leetcode_2 {
                 index2++;
             }    
         }
+        
         if(res.length % 2 == 1){
             int mid = (res.length+1)/2;
             return res[mid-1];
