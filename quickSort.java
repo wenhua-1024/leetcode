@@ -1,9 +1,11 @@
 public class quickSort {
     public static void main(String[] args) {
-        int[] arr = {4,6,8,2,3,5,9,0,1,7};
+        int[] arr = {4,6,8,2,3,10, 20, 10, 3,5,9,0,1,7};
         sort(arr, 0, arr.length-1);
-        for(int i=0; i<arr.length; i++)
+        for(int i=0; i<arr.length; i++){
             System.out.print(arr[i]);
+            System.out.print("\t");
+        }
     }
 
     public static void sort(int[] arr, int start, int end){
@@ -24,7 +26,7 @@ public class quickSort {
             }
             else if(flag==1){
                 if(arr[right]<tmp){
-                    arr[left++] = arr[right];
+                    arr[left] = arr[right];
                     flag=0;
                 }
                 else{
