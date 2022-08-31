@@ -1,3 +1,2 @@
 # leetcode
-some  codes for Leetcode.
-test
+some codes for Leetcode using python or java.
